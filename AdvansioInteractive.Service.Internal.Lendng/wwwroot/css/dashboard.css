@@ -1,0 +1,127 @@
+﻿body{
+    width: 100%;
+    background: #E5E7EB;
+    position: relative;
+    display: flex;
+    font-family: 'Roboto', 'Nunito', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#menu {
+    background: #14142D;
+    width: 300px;
+    height: 100%;
+
+}
+#menu .logo {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    background: #E41613;
+    color: #fff;
+    padding: 30px 0 0 30px;
+
+}
+
+    #menu .items{
+        margin-top: 40px;
+
+    }
+        #menu .items li {
+            list-style: none;
+            padding: 15px 0;
+            transition: 0.3s ease;
+        }
+
+    #menu .items li i{
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        margin: 0 10px 0 25px;
+    }
+
+    #menu .items li a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300;
+        transition: 0.3s ease;
+    }
+
+        #menu .items li:hover{
+            background: #fff;
+            color: red;
+            cursor: pointer;
+        }
+        #menu .items li:nth-child(1){
+        border-left: 4px solid red;
+        }
+
+        /*#menu .items li:hover i{
+            color: #F3F4F6;
+        }*/
+
+
+#mainpage{
+    width: calc(100% - 300px);
+
+}
+#mainpage .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #808080;
+}
+
+#mainpage .navigation .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 5px;
+}
+    #mainpage .navigation .search i{
+        margin-right: 14px;
+    }
+    #mainpage .navigation .search input {
+        border: none;
+        outline: none;
+        font-size: 14px; 
+    }
+
+    #mainpage .navigation .profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #mainpage .navigation .profile i{
+        margin-right: 20px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+    
+        #mainpage .navigation .profile .profileIcons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+       .cards{
+           padding: 30px 30px 0 30px;
+
+       }
+       .cards .card-box{
+           background: #fff;
+           width: 235px;
+           padding: 16px 20px;
+           border-radius: 5px;
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+
+       }

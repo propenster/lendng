@@ -1,0 +1,38 @@
+﻿@model AdvansioInteractive.Service.Internal.Lendng.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4"></div>
+
+       <div class="col-lg-4">
+            <form class="form" method="post">
+                <h3>Login</h3><br/>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" asp-for="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" asp-for="Password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" asp-for="RememberMe" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">@Html.DisplayNameFor(x => x.RememberMe)</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+       </div>
+
+               <div class="col-lg-4"></div>
+
+
+
+
+    </div>
+</div>
